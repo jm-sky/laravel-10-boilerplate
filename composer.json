@@ -9,6 +9,7 @@
         "barryvdh/laravel-debugbar": "^3.8",
         "erusev/parsedown-extra": "^0.8.1",
         "guzzlehttp/guzzle": "^7.2",
+        "intervention/image": "^2.7",
         "intervention/validation": "^3.3",
         "laravel/breeze": "^1.20",
         "laravel/cashier": "^14.12",
@@ -18,12 +19,15 @@
         "laravel/telescope": "^4.14",
         "laravel/tinker": "^2.8",
         "spatie/laravel-activitylog": "^4.7",
+        "spatie/laravel-collection-macros": "^7.12",
+        "spatie/laravel-medialibrary": "^10.9",
         "spatie/laravel-permission": "^5.10",
         "spatie/laravel-query-builder": "^5.2"
     },
     "require-dev": {
         "doctrine/dbal": "^3.6",
         "fakerphp/faker": "^1.9.1",
+        "laravel-lang/common": "^3.1",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
