@@ -2,7 +2,7 @@
 
 ## Vel Plate - Laravel Boilerplate
 
-Laravel is a web application framework with expressive, elegant syntax. This repo is made with `curl -s "https://laravel.build/example-app?with=pgsql,redis,minio&devcontainer" | bash` command from [Laravel Docs](https://laravel.com/docs/10.x#getting-started-on-windows)
+Laravel is a web application framework with expressive, elegant syntax. This repo is made with `curl -s "https://laravel.build/j-dashboard?with=mysql,redis,minio&devcontainer" | bash` command from [Laravel Docs](https://laravel.com/docs/10.x#getting-started-on-windows)
 
 ## Packages
 
