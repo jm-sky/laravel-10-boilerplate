@@ -69,11 +69,11 @@
                 </div>
                 <div class="mb-4 mx-2">
                     <x-label for="content" value="Listing content (markdown supported)" />
-                    <textarea id="content" name="content" :value="old('content')" required class="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full"></textarea>
+                    <textarea id="content" name="content" :value="old('content')" required class="rounded-md shadow-sm border-gray-300 focus:border-primary-300 focus:ring focus:ring-primary-200 focus:ring-opacity-50 block mt-1 w-full">{{ old('content') }}</textarea>
                 </div>
                 <div class="mb-4 mx-2">
                     <label for="is_highlighted" value="Highlight">
-                        <input id="is_highlighted" type="checkbox" name="is_highlighted" :value="old('is_highlighted')" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50" />
+                        <input id="is_highlighted" type="checkbox" name="is_highlighted" :value="old('is_highlighted')" class="rounded border-gray-300 text-primary-600 shadow-sm focus:border-primary-300 focus:ring focus:ring-offset-0 focus:ring-primary-200 focus:ring-opacity-50" />
                         <span class="ml-2">Hightlight this post (extra $19)</span>
                     </label>
                 </div>
@@ -85,7 +85,7 @@
                 <div class="mb-2 mx-2">
                     @csrf
                     <input type="hidden" id="payment_method_id" name="payment_method_id" value="" />
-                    <button type="submit" id="form_submit" class="block w-full items-center bg-indigo-500 text-white border-0 py-2 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0">Pay + Continue</button>
+                    <button type="submit" id="form_submit" class="block w-full items-center bg-primary-500 text-white border-0 py-2 focus:outline-none hover:bg-primary-600 rounded text-base mt-4 md:mt-0">Pay + Continue</button>
                 </div>
 
             </form>
@@ -98,7 +98,7 @@
         const elements = stripe.elements();
         const cardElement = elements.create('card', {
             classes: {
-                base: 'StripeElement rounded-md shadow-sm bg-white px-2 py-3 border border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full'
+                base: 'StripeElement rounded-md shadow-sm bg-white px-2 py-3 border border-gray-300 focus:border-primary-300 focus:ring focus:ring-primary-200 focus:ring-opacity-50 block mt-1 w-full'
             }
         });
         cardElement.mount('#card-element');

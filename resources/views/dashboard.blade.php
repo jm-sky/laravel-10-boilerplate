@@ -19,7 +19,7 @@
                         </div>
                         <div class="md:flex-grow mr-8 flex items-center justify-start">
                             @foreach($listing->tags as $tag)
-                                <span class="inline-block ml-2 tracking-wide text-xs font-medium title-font py-0.5 px-1.5 border hover:bg-indigo-500 hover:text-white border-indigo-500 uppercase {{ $tag->slug == request()->tag ? 'bg-indigo-500 text-white' : 'bg-white text-indigo-500' }}">
+                                <span class="inline-block ml-2 tracking-wide text-xs font-medium title-font py-0.5 px-1.5 border hover:bg-primary-500 hover:text-white border-primary-500 uppercase {{ $tag->slug == request()->tag ? 'bg-primary-500 text-white' : 'bg-white text-primary-500' }}">
                                     {{ $tag->name }}
                                 </span>
                             @endforeach

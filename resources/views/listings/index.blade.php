@@ -4,7 +4,7 @@
         <div class="mb-12">
             <div class="flex justify-center gap-2">
                 @foreach($tags as $tag)
-                    <a href="{{ route('listings.index', ['tag' => $tag->slug]) }}" class="tag-item {{ $tag->slug == request()->tag ? 'bg-indigo-500 text-white' : 'bg-white text-indigo-500' }}">
+                    <a href="{{ route('listings.index', ['tag' => $tag->slug]) }}" class="tag-item {{ $tag->slug == request()->tag ? 'bg-primary-500 text-white' : 'bg-white text-primary-500' }}">
                         {{ $tag->name }}
                     </a>
                 @endforeach
@@ -25,7 +25,7 @@
                     </div>
                     <div class="md:flex-grow mr-8 flex items-center justify-start gap-2">
                         @foreach($listing->tags as $tag)
-                            <span class="tag-item {{ $tag->slug == request()->tag ? 'bg-indigo-500 text-white' : 'bg-white text-indigo-500' }}">
+                            <span class="tag-item {{ $tag->slug == request()->tag ? 'bg-primary-500 text-white' : 'bg-white text-primary-500' }}">
                                 {{ $tag->name }}
                             </span>
                         @endforeach

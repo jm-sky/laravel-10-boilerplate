@@ -9,10 +9,10 @@
 }
 
 .tag-item {
-    @apply rounded-sm inline-block tracking-wide text-xs text-indigo-500 font-medium py-0.5 px-1.5 uppercase;
-    @apply border hover:bg-indigo-500 hover:text-white border-indigo-500;
+    @apply rounded-sm inline-block tracking-wide text-xs text-primary-500 font-medium py-0.5 px-1.5 uppercase;
+    @apply border hover:bg-primary-500 hover:text-white border-primary-500;
 }
 
 .btn-outline {
-    @apply py-1 px-3 border rounded border-transparent hover:text-indigo-500 hover:border-indigo-500 transition-all;
+    @apply py-1 px-3 border rounded border-transparent hover:text-primary-500 hover:border-primary-500 transition-all;
 }
