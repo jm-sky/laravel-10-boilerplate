@@ -24,8 +24,8 @@ Route::get('/', [ListingController::class, 'index'])->name('listings.index');
 Route::get('/new', [ListingController::class, 'create'])->name('listings.create');
 Route::post('/new', [ListingController::class, 'store'])->name('listings.store');
 
-Route::post('/privacy-policy ', [InformationController::class, 'privacyPolicy'])->name('privacy-policy');
-Route::post('/terms-of-use', [InformationController::class, 'termsOfUse'])->name('terms-of-use');
+Route::get('/privacy-policy ', [InformationController::class, 'privacyPolicy'])->name('privacy-policy');
+Route::get('/terms-of-use', [InformationController::class, 'termsOfUse'])->name('terms-of-use');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
 
