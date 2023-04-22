@@ -14,11 +14,7 @@
     <link href="/fontawesome/css/solid.min.css" rel="stylesheet">
 
     <!-- Scripts -->
-    @production
-        {{ vite_assets() }}
-    @else
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @endproduction
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="font-sans antialiased">
