@@ -26,7 +26,7 @@ class ListingFactory extends Factory
         }
 
         // $file = basename($this->faker->image(storage_path('app/public/images'), 200, 200, null, true));
-        $file = $file ?? 'RBhrmgJSeFuPO1HhRmco3tXUYvSjWnNeP5KZCbFd.png';
+        $file = $file ?? 'default-company-img.webp';
 
         return [
             'title' => $title,
