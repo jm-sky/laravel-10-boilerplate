@@ -2,7 +2,19 @@
 
 ## Vel Plate - Laravel Boilerplate
 
-Laravel is a web application framework with expressive, elegant syntax. This repo is made with `curl -s "https://laravel.build/j-dashboard?with=mysql,redis,minio&devcontainer" | bash` command from [Laravel Docs](https://laravel.com/docs/10.x#getting-started-on-windows)
+Laravel is a web application framework with expressive, elegant syntax.
+
+This repo is made with `curl -s "https://laravel.build/j-dashboard?with=mysql,redis,minio&devcontainer" | bash` command from [Laravel Docs](https://laravel.com/docs/10.x#getting-started-on-windows)
+
+It also contains some additional functionalities - OAuth login, Job Dashboard with Cashier payments. 
+
+## Road map 
+- [x] OAuth authentication
+- [x] Cachier integration example (job board) 
+- [ ] Avatars upload with auto-size
+- [ ] Roles and permission editor
+- [ ] JSON REST CRUD API with Spatie Query Builder 
+  - [ ] Model resource response caching 
 
 ## Packages
 
