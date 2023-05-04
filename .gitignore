@@ -16,7 +16,7 @@ yarn-error.log
 
 # COMPOSER
 /vendor
-composer.lock
+# composer.lock
 
 # OTHER
 /storage/*.key
