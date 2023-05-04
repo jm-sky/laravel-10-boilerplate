@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ListingController;
+use App\Http\Controllers\CalendarController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InformationController;
 use App\Http\Controllers\Auth\SocialiteAuthController;
@@ -28,6 +29,7 @@ Route::get('/privacy-policy ', [InformationController::class, 'privacyPolicy'])-
 Route::get('/terms-of-use', [InformationController::class, 'termsOfUse'])->name('terms-of-use');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
+Route::get('/calendar', [CalendarController::class, 'index'])->middleware(['auth'])->name('calendar');
 
 require __DIR__ . '/auth.php';
 

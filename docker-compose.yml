@@ -1,4 +1,5 @@
 version: '3'
+
 services:
   laravel.test:
     build:
@@ -18,24 +19,25 @@ services:
       XDEBUG_MODE: '${SAIL_XDEBUG_MODE:-off}'
       XDEBUG_CONFIG: '${SAIL_XDEBUG_CONFIG:-client_host=host.docker.internal}'
     volumes:
-        # - '.:/var/www/html'
-        - './app:/var/www/html/app'
-        - './config:/var/www/html/config'
-        - './database:/var/www/html/database'
-        - './lang:/var/www/html/lang'
-        - './public:/var/www/html/public'
-        - './resources:/var/www/html/resources'
-        - './routes:/var/www/html/routes'
-        - './storage:/var/www/html/storage'
-        - './tests:/var/www/html/tests'
-        - './.env:/var/www/html/.env'
-        - './composer.json:/var/www/html/composer.json'
+        - '.:/var/www/html'
+        # - './app:/var/www/html/app'
+        # - './config:/var/www/html/config'
+        # - './database:/var/www/html/database'
+        # - './lang:/var/www/html/lang'
+        # - './public:/var/www/html/public'
+        # - './resources:/var/www/html/resources'
+        # - './routes:/var/www/html/routes'
+        # - './storage:/var/www/html/storage'
+        # - './tests:/var/www/html/tests'
+        # - './.env:/var/www/html/.env'
+        # - './composer.json:/var/www/html/composer.json'
     networks:
       - sail
     depends_on:
       - mysql
       - redis
       - minio
+
   mysql:
     image: 'mysql/mysql-server:8.0'
     ports:
@@ -56,6 +58,7 @@ services:
       test: [CMD, mysqladmin, ping, '-p${DB_PASSWORD}']
       retries: 3
       timeout: 5s
+
   redis:
     image: 'redis:alpine'
     ports:
@@ -68,6 +71,7 @@ services:
       test: [CMD, redis-cli, ping]
       retries: 3
       timeout: 5s
+
   minio:
     image: 'minio/minio:latest'
     ports:
